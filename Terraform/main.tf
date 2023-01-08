@@ -13,3 +13,12 @@ module "IGW" {
 module "NAT" {
   source = "../network module/NAT gateway"
 }
+module "web" {
+  source = "../App/web"
+}
+module "NAT" {
+  source = "../App/app"
+}
+module "db" {
+  source = "../DB"
+}
